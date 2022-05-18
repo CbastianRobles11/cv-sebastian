@@ -90,7 +90,7 @@ export default function FormularioEmail() {
                     <label for="exampleFormControlTextarea1" class="form-label">Su Mensaje</label>
                     <textarea type="email" class="form-control"  placeholder="Ingrese su mensaje aquí" {...register("user_message", { required: true, minLength:10 })} >
                     </textarea>
-                        {errors.user_message?.type==="required" && <p style={{color:'violet'}}> ! Su mensaje es requerido </p>}
+                        {errors.user_message?.type==="required" && <p style={{color:'violet'}}>! Su mensaje es requerido </p>}
                         {errors.user_message?.type==="minLength" && <p style={{color:'violet'}}> ! Su mensaje debe tener al menos 10 caracteres </p>}
                     {/* <textarea class="form-control" name='user_message' id="exampleFormControlTextarea1" rows="3"></textarea> */}
                 </div>
