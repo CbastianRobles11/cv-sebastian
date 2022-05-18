@@ -7,6 +7,11 @@
   pointer-events: none;
 }
 
+.form-control:focus {
+  border-color: violet !important;
+  box-shadow: violet;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -26,6 +31,27 @@
 
 .App-link {
   color: #61dafb;
+}
+
+#link{
+  color: black;
+  text-decoration: none;
+}
+.negrilla{
+  font-weight: bold;
+}
+
+.cardHover{
+ box-shadow: 5px,5px,20px,(0,0,0,0,2);
+ transition: all 600ms ease;
+}
+.cardHover:hover{
+  
+  box-shadow: 18px,18px,50px,(1,1,1,1,8);
+  background-color: violet;
+  color: white;
+  height: 140%;
+  transform: translate3d(-5%) !important;
 }
 
 @keyframes App-logo-spin {

@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Principal from './Components/Principal';
+import Navbar from './Components/Navbar';
+import Contenido from './Components/Contenido';
+import Footer from './Components/Footer';
+import FormularioEmail from './Components/FormularioEmail';
+import CvComun from './Components/CvComun';
+import Page from './Components/Page';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div style={{ backgroundColor: "black" }} >
+      <Navbar  />
+      <Page />
+
     </div>
+   
   );
 }
 
